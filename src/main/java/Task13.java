@@ -30,7 +30,6 @@ public class Task13 {
             noInputDataException = false;
         }
     }
-
     private static void inputDataValidation() {
         if (noInputDataException) {
             if (A < -32000 || A > 32000 || B < -32000 || B > 32000) {
