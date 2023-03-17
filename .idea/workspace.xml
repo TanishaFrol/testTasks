@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47473b35-5ca4-4193-ab53-22c13b4ee892" name="Changes" comment="task 6">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Task4.java" afterDir="false" />
+    <list default="true" id="47473b35-5ca4-4193-ab53-22c13b4ee892" name="Changes" comment="задачи Тинькофф v2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Task7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Task6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,14 +44,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Task3">
-    <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Task1" />
-      <module name="testTasks" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Task7">
     <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Task2" />
       <module name="testTasks" />
@@ -85,13 +73,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task7" />
+      <module name="testTasks" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task7" />
         <item itemvalue="Application.Task3" />
         <item itemvalue="Application.Task2" />
         <item itemvalue="Application.Task6" />
         <item itemvalue="Application.Task5" />
-        <item itemvalue="Application.Task1" />
       </list>
     </recent_temporary>
   </component>
@@ -118,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678735221477</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="задачи Тинькофф v2">
+      <created>1678986035635</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678986035635</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +149,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="задачи Тинькофф часть 1" />
     <MESSAGE value="task 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 6" />
+    <MESSAGE value="задачи Тинькофф v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="задачи Тинькофф v2" />
   </component>
 </project>
