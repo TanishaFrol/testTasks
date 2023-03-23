@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -17,124 +16,46 @@ import java.util.Scanner;
     Пройти минимальное количество лестничных пролетов.
 Помогите Кате выполнить все пункты ее плана.
 */
+
 public class Task3 {
     private static String[] inputLine1;
     private static String[] inputLine2;
     private static String[] inputLine3;
-    private static int[] floors;
-    private static int employeesNumber;
+    private static int employeesCount;
     private static int t;
+    private static int[] floors;
     private static int togoNumber;
-    private static boolean validationOK;
-
+    private static Scanner in;
 
     public static void main(String[] args) {
         getData();
-        inputDataValidation();
-        initialize();
         solution();
     }
 
     private static void getData() {
-        Scanner in = new Scanner(System.in);
+        in = new Scanner(System.in);
         inputLine1 = in.nextLine().split("\\s");
-        in.nextLine();
+        employeesCount = Integer.parseInt(inputLine1[0]);
+        t = Integer.parseInt(inputLine1[1]);
         inputLine2 = in.nextLine().split("\\s");
-        in.nextLine();
+        floors = new int[employeesCount];
+        for (int i = 0; i < floors.length; i++) {
+            floors[i] = Integer.parseInt(inputLine2[i]);
+        }
         inputLine3 = in.nextLine().split("\\s");
+        togoNumber = Integer.parseInt(inputLine3[0]);
     }
-
-    private static void inputDataValidation() {
-        checkInputLine1();
-        checkInputLine2();
-        checkInputLine3();
-    }
-
-    private static void checkInputLine1() {
-        if (inputLine1.length != 2) {
-            System.out.println("Invalid input data, please, enter 2 positive integers");
-            validationOK = false;
-        } else {
-            try {
-                validationOK = Arrays.asList(inputLine1).stream().noneMatch(x -> Integer.parseInt(x) < 2 || Integer.parseInt(x) > 100);
-                if (!validationOK) {
-                    System.out.println("Invalid input data: 2 <= n,t <= 100");
-                }
-            } catch (Exception e) {
-                System.out.println("Invalid input data: 2 <= n,t <= 100");
-                validationOK = false;
-            }
-        }
-    }
-
-    private static void checkInputLine2() {
-        if (validationOK) {
-            long floorsNumberWithoutRepeats = Arrays.asList(inputLine2).stream().distinct().count();
-            int floorsCount = Integer.parseInt(inputLine1[0]);
-            if (inputLine2.length != floorsCount) {
-                System.out.println("Invalid input data");
-                validationOK = false;
-            } else if (inputLine2.length != floorsNumberWithoutRepeats) {
-                System.out.println("Invalid input data");
-                validationOK = false;
-            } else {
-                try {
-                    validationOK = Arrays.asList(inputLine2).stream().noneMatch(x -> Integer.parseInt(x) < 1 || Integer.parseInt(x) > 100);
-                    if (!validationOK) {
-                        System.out.println("Invalid input data: 1 <= each floor <= 100");
-                    }
-                } catch (Exception e) {
-                    System.out.println("Invalid input data: 1 <= each floor <= 100");
-                    validationOK = false;
-                }
-            }
-        }
-    }
-
-    private static void checkInputLine3() {
-        if (validationOK) {
-            if (inputLine3.length != 1) {
-                System.out.println("Invalid input data, please, enter 1 positive integer");
-                validationOK = false;
-            } else {
-                try {
-                    validationOK = Arrays.asList(inputLine3).stream().noneMatch(x -> Integer.parseInt(x) < 1 || Integer.parseInt(x) > inputLine2.length);
-                    if (!validationOK) {
-                        System.out.println("Invalid input data: 1 <= x <= floors number");
-                    }
-                } catch (Exception e) {
-                    System.out.println("Invalid input data: 1 <= x <= floors number");
-                    validationOK = false;
-                }
-            }
-        }
-    }
-
-    private static void initialize() {
-        if (validationOK) {
-            employeesNumber = Integer.parseInt(inputLine1[0]);
-            t = Integer.parseInt(inputLine1[1]);
-            floors = new int[employeesNumber];
-            for (int i = 0; i < floors.length; i++) {
-                floors[i] = Integer.parseInt(inputLine2[i]);
-            }
-            togoNumber = Integer.parseInt(inputLine3[0]);
-        }
-    }
-
     private static void solution() {
-        if (validationOK) {
-            int maxFloor = floors[floors.length - 1];
-            int minFloor = floors[0];
-            int togoFirstFloor = floors[togoNumber - 1];
-            if ((togoFirstFloor - minFloor) <= t || (maxFloor - togoFirstFloor) <= t) {
-                System.out.println(maxFloor - minFloor);
+        int maxFloor = floors[floors.length - 1];
+        int minFloor = floors[0];
+        int togoFirstFloor = floors[togoNumber - 1];
+        if ((togoFirstFloor - minFloor) <= t || (maxFloor - togoFirstFloor) <= t) {
+            System.out.println(Math.abs(maxFloor - minFloor));
+        } else {
+            if ((maxFloor - togoFirstFloor) < (togoFirstFloor - minFloor)) {
+                System.out.println(maxFloor - minFloor + maxFloor - togoFirstFloor);
             } else {
-                if ((maxFloor - togoFirstFloor) < (togoFirstFloor - minFloor)) {
-                    System.out.println(maxFloor - minFloor + maxFloor - togoFirstFloor);
-                } else {
-                    System.out.println(maxFloor - minFloor + togoFirstFloor - minFloor);
-                }
+                System.out.println(maxFloor - minFloor + togoFirstFloor - minFloor);
             }
         }
     }
