@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47473b35-5ca4-4193-ab53-22c13b4ee892" name="Changes" comment="пробные задачи + задачи с экзамена">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Exam1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Exam2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Exam3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Exam4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Exam5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Exam6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Task13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Task3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Task4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Task5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Task6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Task7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Task7.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
