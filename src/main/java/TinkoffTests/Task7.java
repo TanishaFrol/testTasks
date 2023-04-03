@@ -1,5 +1,6 @@
+package TinkoffTests;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -100,7 +101,7 @@ public class Task7 {
             if (cycleCounter == receivers.length) {
                 System.out.println(wrongPositions.get(0) + 1 + " " + topX);
             } else {
-                //System.out.println("\nпервый вариант не подошел, пробуем второй");
+                //System.out.println("\nервый вариант не подошел, пробуем второй");
                 receivers[wrongPositions.get(0)] = topY;
                 receivers[wrongPositions.get(1)] = topX;
                 //System.out.println("новый массив: " + Arrays.toString(receivers));

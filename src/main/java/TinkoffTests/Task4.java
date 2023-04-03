@@ -1,5 +1,12 @@
-import java.util.*;
+package TinkoffTests;
 
+import java.util.*;
+/*
+У Кости есть бумажка, на которой написано n чисел. Также у него есть возможность не больше, чем k раз,
+взять любое число с бумажки, после чего закрасить одну из старых цифр, а на ее месте написать новую произвольную цифру.
+
+На какое максимальное значение Костя сможет увеличить сумму всех чисел на листочке?
+*/
 public class Task4 {
     private static int amountNumber;
     private static int amountNumberToChange;
