@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.math.BigInteger;
 
 /*
 Во время разработки некоторой задачи Саша решил сгенерировать несколько новых тестов.
@@ -40,7 +41,7 @@ public class Task5 {
         }
     }
     private static void parseInputDataArray() throws Exception {
-        validationOK = Arrays.asList(data).stream().noneMatch(x -> Long.parseLong(x) < 1 || Long.parseLong(x) > 1.0E18);
+        validationOK = Arrays.asList(data).stream().noneMatch(x -> Long.parseLong(x) < 1 || Long.parseLong(x) > Math.pow(10, 18));
         if (!validationOK) {
             System.out.println("Invalid input data: 1 <= l, r <= 10^18");
         }
@@ -53,20 +54,17 @@ public class Task5 {
     }
     private static void solution() {
         if (validationOK) {
-            long count = 0;
-            for (long k = 1; k < 18; ++k) {
-                for (long u = 0; u++ < 9; ) {
-                    long repdigit = (long) (u * ((Math.pow(10, k) - 1) / 9));
-                    if (repdigit >= l && repdigit <= r) {
+            int count = 0;
+            for (int k = 1; k < 19; ++k) {
+                for (int u = 0; u++ < 9; ) {
+                    BigInteger pow = BigInteger.valueOf((long) Math.pow(10, k));
+                    BigInteger rd = BigInteger.valueOf(u).multiply(pow.add(BigInteger.valueOf(-1))).divide(BigInteger.valueOf(9));
+                    if (rd.longValue() >= l && rd.longValue() <= r) {
                         count++;
-                    } else {
-                        continue;
                     }
                 }
             }
             System.out.println(count);
-            System.out.println(Math.pow(10, 18));
         }
     }
 }
-

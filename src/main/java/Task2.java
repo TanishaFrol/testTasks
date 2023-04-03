@@ -15,32 +15,34 @@ import java.util.Scanner;
 а потом совместил бы две половинки и разрезал обе пополам одновременно.
 Вам дано число N, требуется сказать, каким минимальным числом разрезов можно обойтись.
 */
+
 public class Task2 {
     private static int N;
     private static boolean validationOK;
-    private static boolean noInputDataException;
 
     public static void main(String[] args) {
-        getData();
-        inputDataValidation();
-        solution();
+        while (true) {
+            getData();
+            inputDataValidation();
+            solution();
+        }
     }
 
     private static void getData() {
         Scanner in = new Scanner(System.in);
         try {
             N = in.nextInt();
-            noInputDataException = true;
+            validationOK = true;
         } catch (Exception e) {
             System.out.println("Invalid input data: 1 <= N <= 2*10^9");
-            noInputDataException = false;
+            validationOK = false;
         }
     }
 
     private static void inputDataValidation() {
-        if (noInputDataException) {
+        if (validationOK) {
             if (N < 1 || N > 2 * Math.pow(10, 9)) {
-                System.out.println("Invalid input data, the number of pieces cannot be less than 1 and more than 2*10^9");
+                System.out.println("Invalid input data: 1 <= N <= 2*10^9");
                 validationOK = false;
             } else {
                 validationOK = true;
@@ -50,14 +52,11 @@ public class Task2 {
 
     private static void solution() {
         if (validationOK) {
-            int x = 0;
-            int y = 1;
-
-            while (y < N) {
-                x += 1;
-                y *= 2;
-            }
-            System.out.println(x);
+            System.out.println((int) Math.ceil(log2(N)));
         }
+    }
+
+    public static double log2(int x) {
+        return Math.log(x) / Math.log(2);
     }
 }
