@@ -1,3 +1,5 @@
+package TinkoffTests;
+
 import java.util.Scanner;
 
 /*
