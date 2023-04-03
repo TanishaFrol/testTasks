@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
+    <list default="true" id="50f6b7ce-951c-4856-8f24-1e0fd71a5141" name="Changes" comment="задачи Тинькофф v4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Exam1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Exam2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Exam3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Exam4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Exam5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TinkoffTests/Exam6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/YandexAlgorithmTraining1/Task1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/YandexAlgorithmTraining1/Task2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/YandexAlgorithmTraining1/Task3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,21 +52,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.main">
-    <configuration name="Exam3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exam3" />
-      <module name="testTasks" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Exam4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exam4" />
-      <module name="testTasks" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Task3">
     <configuration name="Exam5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Exam5" />
       <module name="testTasks" />
@@ -71,6 +67,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="YandexAlgorithmTraining1.Task2" />
+      <module name="testTasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="YandexAlgorithmTraining1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="YandexAlgorithmTraining1.Task3" />
+      <module name="testTasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="YandexAlgorithmTraining1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="testTasks" />
@@ -80,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task3" />
+        <item itemvalue="Application.Task2" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.Exam6" />
         <item itemvalue="Application.Exam5" />
-        <item itemvalue="Application.Exam4" />
-        <item itemvalue="Application.Exam3" />
       </list>
     </recent_temporary>
   </component>
